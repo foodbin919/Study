@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<HTML>
+ <HEAD>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./css/common/bin.css" />
+  <link rel="stylesheet" href="./css/common/bin_main.css" />
+ </HEAD>
+
+ <BODY>
+  <!-- jquery Library -->
+  <script src="./js/common/jquery-1.7.2.min.js"></script>
+  <div class="main_wrap">
+	<div class="header">
+		<div class="logo">logo</div>
+		<div class="menuArea">
+			<ul class="menuNavi">
+				<li class="menu1">
+					<a href="#">어쿠스틱기타</a>
+					<ul class="sub">
+						<li><a href="#">통기타</a></li>
+						<li><a href="#">클래식기타</a></li>
+						<li><a href="#">여행용/미니</a></li>
+					</ul>
+				</li>
+				<li class="menu2">
+					<a href="#">일렉기타</a>
+					<ul class="sub">
+						<li><a href="#">일렉기타</a></li>
+						<li><a href="#">이펙터</a></li>
+						<li><a href="#">악세사리</a></li>
+					</ul>
+				</li>
+				<li class="menu3">
+					<a href="#">베이스기타</a>
+					<ul class="sub">
+						<li><a href="#">베이스기타</a></li>
+						<li><a href="#">에픽터</a></li>
+						<li><a href="#">악세사리</a></li>
+					</ul>
+				</li>
+				<li class="menu4">
+					<a href="#">어쿠스틱기타</a>
+					<ul class="sub">
+						<li><a href="#">우크렐레</a></li>
+						<li><a href="#">악세사리</a></li>
+					</ul>
+				</li>
+				<li class="menu5">
+					<a href="#">엠프</a>
+					<ul class="sub">
+						<li><a href="#">버스킹엠프</a></li>
+						<li><a href="#">어쿠엠프</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="container">
+		container
+	</div>
+	<div class="footer">
+		footer
+	</div>
+  </div>
+  <script>
+	
+	$(".menuNavi .sub").hide();
+
+	$(".menuNavi > li").hover(
+		function(){
+			$(this).find("ul").show();
+			$(this).find("a:first").addClass("on");
+		},
+		function(){
+			$(this).find("ul").hide();
+			$(this).find("a:first").removeClass("on");
+		}
+	);
+  </script>
+ </BODY>
+</HTML>

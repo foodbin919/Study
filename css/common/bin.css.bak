@@ -1,0 +1,7 @@
+@charset "utf-8";
+/******************** Common **********************/
+* {margin:0; padding:0; list-style:none; font-family: 'Nanum Gothic' }
+img,fieldset{border:0}
+ul,ol,li{list-style:none}
+em,address{font-style:normal}
+a{text-decoration:none}

@@ -1,0 +1,66 @@
+@charset "utf-8";
+/******************** main **********************/
+.main_wrap {width:100%}
+.main_wrap .header {
+	position: static;
+	width:100%;
+	height: 104px;
+}
+.main_wrap .header .logo {
+	position: relative;
+	float: left;
+	width: 12%;
+	height: 104px;
+	background-color: #CE6565;
+}
+.main_wrap .header .menuArea {
+	float: left;
+	width: 88%;
+	height: 104px;
+	background: #fff;
+}
+.main_wrap .header .menuArea .menuNavi,
+.main_wrap .header .menuArea .menuNavi > ul{
+	line-height: 2.5em;
+	height: 60px;
+	background: #333;
+}
+.main_wrap .header .menuArea .menuNavi > li {
+	posion: relative;
+	float: left;
+	width: 18%;
+	height: 104px;
+	text-align: center;
+}
+.main_wrap .header .menuArea .menuNavi > li > a {
+	display: block;
+	color: #fff;
+	line-height: 60px;
+}
+.main_wrap .header .menuArea .menuNavi > li > a:hover,	
+.main_wrap .header .menuArea .menuNavi > li > a.on {
+	background: #999;
+}
+	
+/*Menu 2Depth*/
+.main_wrap .header .menuArea .menuNavi > li > ul {
+	position: absolute;
+	top:60px;
+	width: 500px;
+}
+.main_wrap .header .menuArea .menuNavi > li > ul > li{
+	display: block;
+	float: left;
+	text-align: center;
+	width: 18%;
+}
+.main_wrap .header .menuArea .menuNavi > li > ul > li > a {
+	display: block;
+	background: #333;
+	color: #fff;
+	line-height: 45px;
+}
+.main_wrap .header .menuArea .menuNavi > li > ul > li > a:hover,	
+.main_wrap .header .menuArea .menuNavi > li > ul > li > a.on {
+	background: #999;
+}
